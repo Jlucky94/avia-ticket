@@ -25,7 +25,7 @@ const routes = [
     },
 
 ]
-const router = createBrowserRouter(routes, {basename:'/'})
+const router = createBrowserRouter(routes)
 
 ReactDOM.createRoot(document.getElementById('app')!).render(
     <React.StrictMode>
