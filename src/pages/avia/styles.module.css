@@ -17,16 +17,31 @@
     padding-left: 30px;
     padding-right: 30px;
 }
+
 .inputs > {
     background-color: white;
     height: 40px;
 }
 
-.button {
+.buttonBlock {
     display: flex;
     height: 86px;
     justify-content: flex-end;
     align-items: center;
     padding-right: 30px;
     border-radius: 0px 0px 15px 15px;
+}
+
+.btn {
+    background-color: #5C87DB;
+    border-radius: 10px;
+
+}
+
+.btn:disabled {
+    background-color: #B7BAC1
+}
+
+.btn:focus {
+    outline: none;
 }

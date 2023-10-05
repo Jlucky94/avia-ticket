@@ -65,9 +65,9 @@ const Avia = memo(() => {
                     <DatePicker label={"Туда"} name={"depDate"} control={(control as unknown) as Control<FieldValues>}/>
                     <DatePicker label={"Обратно"} name={"arrDate"} control={control}/>
                 </div>
-                <div className={s.button}>
+                <div className={s.buttonBlock}>
                     <Button type={"submit"}
-                            style={{backgroundColor: "#5C87DB", borderRadius: "10px"}}
+                            className={s.btn}
                             variant={"contained"}
                             disabled={!isValid}>
                         Найти билеты
