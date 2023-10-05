@@ -14,7 +14,7 @@ const Avia = memo(() => {
     const dispatch = useAppDispatch()
     const navigate = useNavigate()
     const ticketInfo = useAppSelector(state => state.search.ticketInfo)
-    const {control, handleSubmit, formState: {errors}, reset} = useForm<SearchTicketType>({
+    const {control, handleSubmit, formState: {errors, isValid}, reset} = useForm<SearchTicketType>({
         resolver: zodResolver(searchTicketSchema),
         mode: 'all'
     });
@@ -66,8 +66,12 @@ const Avia = memo(() => {
                     <DatePicker label={"Обратно"} name={"arrDate"} control={control}/>
                 </div>
                 <div className={s.button}>
-                    <Button type={"submit"} style={{backgroundColor: "#5C87DB", borderRadius: "10px"}}
-                            variant={"contained"}>Найти билеты</Button>
+                    <Button type={"submit"}
+                            style={{backgroundColor: "#5C87DB", borderRadius: "10px"}}
+                            variant={"contained"}
+                            disabled={!isValid}>
+                        Найти билеты
+                    </Button>
                 </div>
             </form>
         </div>
