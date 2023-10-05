@@ -14,7 +14,7 @@ const routes = [
         element: <App/>,
         children: [
             {
-                path: "/",
+                path: "avia",
                 element: <Avia/>
             },
             {
