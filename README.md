@@ -9,4 +9,4 @@
 
 ### Live demo of the project:
 
-https://jlucky94.github.io/green-api/
+https://avia-tickets-five.vercel.app/avia
