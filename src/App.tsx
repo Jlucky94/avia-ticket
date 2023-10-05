@@ -1,13 +1,14 @@
 import './App.css'
 import {Outlet, useNavigate} from "react-router-dom";
+import {useEffect} from "react";
 
 const App = () => {
     const navigate = useNavigate()
-    navigate('/avia')
-
+    useEffect(() => {
+        navigate('/avia')
+    }, [])
     return (
         <div>
-            asdasdasdasdasdasdasd
             <Outlet/>
         </div>
 
